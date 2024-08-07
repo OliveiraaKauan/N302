@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você está no início da sua carreira em Administração e se depara com uma nova ferramenta de gestão de projetos. Qual é a sua reação inicial?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Isso pode otimizar bastante nosso fluxo de trabalho!",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Isso é maravilhoso!",
+                texto: "Estou cético quanto a eficácia dessa nova ferramenta.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Sua empresa decidiu adotar uma nova estratégia de marketing digital. Qual é a sua abordagem para contribuir com a implementação?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Utiliza a análise de dados para ajudar a formular uma estratégia baseada em insights detalhados.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Contribui com ideias baseadas na experiência e conhecimento do mercado.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você está participando de uma reunião sobre as tendências futuras em administração. Como você se posiciona?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Acredito que a automação e a análise de dados serão essenciais para o futuro da administração.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Preocupo-me com o impacto da automação nas oportunidades de emprego e a necessidade de capacitação contínua.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Após a reunião, você precisa criar uma apresentação sobre o impacto das novas tecnologias na administração. Como você procede?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Utiliza um software de apresentação para criar slides detalhados com gráficos e dados.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "Desenvolve a apresentação com a ajuda de um gerador de conteúdo baseado em IA para otimizar o tempo.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você tem um projeto em grupo para desenvolver um plano de negócios. Um colega usou uma ferramenta de IA para criar o plano. Qual é a sua reação?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Acredito que usar ferramentas de IA pode ser útil, mas é importante revisar e adicionar a perspectiva da equipe.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "Não vejo problema em usar o plano gerado pela IA, desde que o trabalho esteja completo e seja relevante.",
                 afirmacao: "afirmação"
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,8 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 204
-    29...";
+    caixaPerguntas.textContent = "Sua jornada na administração está apenas começando...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
