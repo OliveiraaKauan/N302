@@ -6,66 +6,66 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você está no início da sua carreira em Administração e se depara com uma nova ferramenta de gestão de projetos. Qual é a sua reação inicial?",
+        enunciado: "Você está participando de uma reunião de equipe e o gerente menciona a implementação de um novo software de gestão empresarial que promete otimizar os processos internos da empresa. Qual o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso pode otimizar bastante nosso fluxo de trabalho!",
+                texto: "Isso pode ser um desafio para adaptar-se às novas ferramentas!",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Estou cético quanto a eficácia dessa nova ferramenta.",
+                texto: "Isso é uma excelente oportunidade para melhorar a eficiência!",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Sua empresa decidiu adotar uma nova estratégia de marketing digital. Qual é a sua abordagem para contribuir com a implementação?",
+        enunciado: "Após a reunião, o gerente pede que você elabore um relatório sobre os possíveis impactos do novo software na gestão de projetos. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza a análise de dados para ajudar a formular uma estratégia baseada em insights detalhados.",
+                texto: "Utiliza uma ferramenta de busca para encontrar informações sobre o software e como ele pode impactar a gestão de projetos.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Contribui com ideias baseadas na experiência e conhecimento do mercado.",
+                texto: "Elabora o relatório com base em informações obtidas através de discussões com a equipe e seu próprio conhecimento sobre a gestão de projetos.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Você está participando de uma reunião sobre as tendências futuras em administração. Como você se posiciona?",
+        enunciado: "Durante a apresentação do relatório, você e sua equipe discutem como o novo software pode transformar o papel dos gestores e melhorar a tomada de decisões. Como você se posiciona?",
         alternativas: [
             {
-                texto: "Acredito que a automação e a análise de dados serão essenciais para o futuro da administração.",
+                texto: "Defende que o software pode fornecer dados valiosos que ajudarão na tomada de decisões mais informadas.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Preocupo-me com o impacto da automação nas oportunidades de emprego e a necessidade de capacitação contínua.",
+                texto: "Preocupa-se com a possibilidade de o software reduzir a importância das decisões humanas e diminuir o papel estratégico dos gestores.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Após a reunião, você precisa criar uma apresentação sobre o impacto das novas tecnologias na administração. Como você procede?",
+        enunciado: "Ao final da discussão, você precisa criar uma apresentação para mostrar como o novo software pode ser integrado ao fluxo de trabalho atual. Qual é a sua abordagem?",
         alternativas: [
             {
-                texto: "Utiliza um software de apresentação para criar slides detalhados com gráficos e dados.",
+                texto: "Cria a apresentação usando uma ferramenta de design, como PowerPoint ou Google Slides.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Desenvolve a apresentação com a ajuda de um gerador de conteúdo baseado em IA para otimizar o tempo.",
+                texto: "Utiliza um gerador de apresentações baseado em IA para criar slides e infográficos rapidamente.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Você tem um projeto em grupo para desenvolver um plano de negócios. Um colega usou uma ferramenta de IA para criar o plano. Qual é a sua reação?",
+        enunciado: "Você está trabalhando em um projeto de consultoria com uma equipe e percebe que uma das análises feitas por um membro do grupo foi gerada por uma ferramenta de IA. O que você faz?",
         alternativas: [
             {
-                texto: "Acredito que usar ferramentas de IA pode ser útil, mas é importante revisar e adicionar a perspectiva da equipe.",
+                texto: "Aceita a análise gerada pela IA sem questionar, já que a tecnologia pode ser muito precisa.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Não vejo problema em usar o plano gerado pela IA, desde que o trabalho esteja completo e seja relevante.",
+                texto: "Revisa a análise e adiciona suas próprias observações e interpretações para garantir a precisão e relevância da informação.",
                 afirmacao: "afirmação"
             }
         ]
@@ -87,8 +87,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Sua jornada na administração está apenas começando...";
+    caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
